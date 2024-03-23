@@ -1,3 +1,4 @@
+
 # Testes Automatizados
 
 Nesta pasta, estão dois testes automatizados criados para o projeto, ambos podem ser rodados utilizando `npm test`. O framework utilizado para os testes é o Jest, que é especializado em testes em JavaScript. A seguir, detalhamos o funcionamento de cada teste:
@@ -25,24 +26,22 @@ Estes testes verificam o funcionamento correto das funcionalidades relacionadas 
 
    Estes testes verificam o funcionamento correto das funcionalidades relacionadas às aulas da ONG Gerando Falcões.
 
-   ```javascript
-   it('should fetch all lessons', async () => {
-     // Simular dados retornados do banco de dados
-     const lessons = await LessonService.getAllLessons();
-     expect(lessons.length).toBe(1); // Verifica se a função retornou uma aula
-     // Adicione mais asserções conforme necessário para validar os dados das aulas retornadas
-   });
-   ```
+   ```markdown
+   ## Caso de Teste: Obter Aula por ID
 
-   ```javascript
-   it('should get lesson by class', async () => {
-     // Simular dados retornados do banco de dados
-     const lessonId = 1;
-     const lessons = await LessonService.getLessonByClass(lessonId);
-     expect(lessons.length).toBe(1); // Verifica se a função retornou uma aula
-     // Adicione mais asserções conforme necessário para validar os dados das aulas retornadas
-   });
-   ```
+   **Objetivo:** Verificar se a função `getLessonById` do `LessonService` retorna corretamente uma aula específica.
+
+   **Pré-condição:** Existência de uma aula com ID válido no banco de dados.
+
+   **Procedimento de Teste:**
+   1. Chamar a função `getLessonById` do `LessonService` com o ID da aula a ser obtida.
+   2. Capturar o resultado retornado pela função.
+
+   **Resultado Esperado:** A função deve retornar a aula correspondente ao ID fornecido.
+
+   **Resultado Obtido:** A função retornou corretamente a aula desejada.
+
+   **Pós-condição:** Nenhuma alteração no estado do sistema, apenas a obtenção dos dados da aula.
 
    ```javascript
    it('should get lesson by id', async () => {
@@ -54,4 +53,6 @@ Estes testes verificam o funcionamento correto das funcionalidades relacionadas 
    });
    ```
 
-Estes testes garantem que as funcionalidades relacionadas às aulas da ONG Gerando Falcões estejam funcionando conforme o esperado, ajudando a manter a qualidade e confiabilidade do sistema. Além disso, esses testes já estão presentes no projeto e rodam com sucesso.
+   Adicione mais casos de teste conforme necessário para cobrir outras funcionalidades do `LessonService`.
+
+Estes testes garantem que as funcionalidades relacionadas às aulas da ONG Gerando Falcões estejam funcionando conforme o esperado, ajudando a manter a qualidade e confiabilidade do sistema.
