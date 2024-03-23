@@ -54,4 +54,4 @@ Estes testes verificam o funcionamento correto das funcionalidades relacionadas 
    });
    ```
 
-Estes testes garantem que as funcionalidades relacionadas às aulas da ONG Gerando Falcões estejam funcionando conforme o esperado, ajudando a manter a qualidade e confiabilidade do sistema.
+Estes testes garantem que as funcionalidades relacionadas às aulas da ONG Gerando Falcões estejam funcionando conforme o esperado, ajudando a manter a qualidade e confiabilidade do sistema. Além disso, esses testes já estão presentes no projeto e rodam com sucesso.
